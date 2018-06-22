@@ -1,0 +1,10 @@
+alert("Hi!"); 
+let name = prompt("What's your name?");
+console.log(name);
+let faveColor = prompt("What's your favorite color?");
+console.log(prompt);
+let faveAnimal = prompt("What's your favorite animal?"); 
+console.log(faveAnimal);
+let faveBand = prompt("What's your favorite band?");
+console.log(faveBand);
+confirm("Hi, "+ name + "! It's nice to meet you. My favorite color is " + faveColor + " too. But I'm allergic to " + faveAnimal + "s. Did you hear that " + faveBand + " is in town next week?");
