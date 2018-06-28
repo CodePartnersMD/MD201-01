@@ -9,8 +9,8 @@ h1 {
     color: blue;
 }
 
-.green {
-    color: green;
+#green {
+    background-color: green;
 }
 
 p {
