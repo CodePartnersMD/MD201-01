@@ -1,4 +1,4 @@
-# Assignment Overview: Lab 3
+# Assignment Overview: Lab 2
 
 For this lab we will be adding a few things to the work we've done so far. Use the User Stories and the Technical Requirements to make a plan for how to proceed. Assume that all user stories from the previous lab carry over, except for the ones that are modified or are superseded here.
 
