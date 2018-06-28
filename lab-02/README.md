@@ -18,9 +18,9 @@ It can be very handy to take notes and sketch things out when you are planning y
 
 
 ### Technical Requirements
-- Per the user stories, you will need to include in your HTML at least one each of an ordered and an unordered list.
-- Use `prompt`for input and `alert` for output to the user, unless you are working on the third Stretch Goal.
-- Do not write any functions in your JavaScript.
+- Ensure you have 6-7 questions display to the user, they can be confirm or prompt
+- store those users in variables and concatenate them in some way
+- display the stored answers into HTML
 
 ### Technical Stretch Goals 
 - create an array with multiple string values
