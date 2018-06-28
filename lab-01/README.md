@@ -17,9 +17,10 @@
 
 # Submitting Your Assignment
 
-- Go to https://gist.github.com
-- In the "Gist description..." field, put your name
-- In the "Filename including extension..." field put 'index.html'.
-- Copy-paste your code into the big input field for the Gist.
-- Select the button that says "Create secret gist"; copy that link for submission in the Canvas assignment.
-- Add a comment to your Canvas submission with answers to the prompted questions.
+-Ensure you are working on the forked repo from MD201-01 for this assignment
+-Once you complete the assignment, ACP to your forked repo and then open up a PR to the base repo
+-Submit this assignment with a link to the PR you just created.
+-Add a comment to this Canvas submission with answers to the following questions.
+    How did this go, overall?
+    What observations or questions do you have about what you've learned so far?
+    How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?

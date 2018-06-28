@@ -32,7 +32,10 @@ It can be very handy to take notes and sketch things out when you are planning y
 
 ### Submitting Your Assignment
 
-- Submit the link to your GitHub repo for this project.
-- Add a comment to this Canvas submission with answers to the following questions.
-  - How did this go, overall?
-  - What observations or questions do you have about what you've learned so far?
+-Ensure you are working on the forked repo from MD201-01 for this assignment
+-Once you complete the assignment, ACP to your forked repo and then open up a PR to the base repo
+-Submit this assignment with a link to the PR you just created.
+-Add a comment to this Canvas submission with answers to the following questions.
+    How did this go, overall?
+    What observations or questions do you have about what you've learned so far?
+    How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment?
