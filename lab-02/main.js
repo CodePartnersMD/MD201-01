@@ -26,3 +26,9 @@ if(origin) {
 // while() {
 //     console.log(myArray)
 // }
+
+let myArray = ['horse', 'fish', 'pony']
+
+myArray.push('cat')
+
+Math.floor(Math.random())
