@@ -1,5 +1,46 @@
 console.log(alert("Let\'s go"));
 
+// create a function to store the scope of (i) creating an array, and (ii) the values assigned to the array, to facilitate accessing those values so the program can concatenate a string at the end of the function 
+// NOTE: this turned out to be unnecessary. the original errors that i was running into was because i used multiple let statements, and you CANNOT declare a variable multiple times.  The fix was to eliminate the the let statements, and just have aboutUser[x] = (reassigning the value)
+
+// Create an array to hold--what was previously--the separate variables name, origin, coder, and months
+
+let aboutUser = ["name", "origin", "coder", "months"] ;
+
+// Populate the array using four var statements that correspond to name, origin, coder, and months
+
+aboutUser[0] = prompt("What\'s your name") ;
+console.log(aboutUser[0])
+
+aboutUser[1] = prompt("Hi " + aboutUser[0] + ". Where are you from?") ;
+console.log(aboutUser[1])
+
+let continny = confirm(aboutUser[0] + " to continue please press OK.") ;
+
+aboutUser[2] = prompt("What type of coder do you want to be?") ;
+console.log(aboutUser[2])
+
+aboutUser[3] = prompt("In how many months do you want to be a " + aboutUser[2] + " by?") ;
+console.log(aboutUser[3])
+
+// concatenate a string using the four values stored in the area and display it as a msg in a JavaScript box
+
+let msgtoyou = alert("Keep up the good work " + aboutUser[0] + " from " + aboutUser[1] + ", you will be a " + aboutUser[2] + " in " + aboutUser[3] + " months if you work hard.") ;
+
+// 
+
+if (aboutUser[0] != null) {
+    document.getElementById('userName').innerText = aboutUser[0]
+}
+
+if (aboutUser[1] != null) {
+    document.getElementById('userOrigin').innerText = aboutUser[1]
+}
+if (aboutUser[2] != null) {
+    document.getElementById('userCoder').innerText = aboutUser[2] 
+}
+
+/* June 28, 2018 note - Below is the prior iteration of code with separate variables
 let name = prompt("What\'s your name");
 console.log(name)
 
@@ -23,7 +64,9 @@ if (origin != null) {
 }
 if (coder != null) {
     document.getElementById('userCoder').innerText = coder 
-}
+}*/
+
+
 
 // Beginnings of a personal stretch goal #1: Store the data entered by the user in an array
 //let spitBack = [name, origin, coder]
