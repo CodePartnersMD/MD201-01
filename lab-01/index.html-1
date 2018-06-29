@@ -1,0 +1,3 @@
+let myFUnction = function() {
+    console.log('hello world')
+}
