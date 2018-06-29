@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(71, 68, 68) ; 
+    font-family: Arial, sans-serif; color: white; font-size: 16px ; 
+}
+
+h2 {
+    font-family: Arial, sans-serif; color: rgb(15, 238, 15); font-size: 28px ;
+    font-weight: bolder
+}
+
+h3 {
+    font-family: Arial, sans-serif; color: white; font-size: 24px ;
+    font-weight: bold
+}
+
+h4 {
+    font-family: Arial, sans-serif; color: rgb(236, 92, 9); font-size: 24px ;
+    font-weight: bold
+}
+
+
+.userColorDisplay {
+    font-family: Arial, sans-serif; color: rgb(232, 236, 9); font-size: 24px ;
+    font-weight: bold
+}
+
+elementYOU {
+    color: deeppink
+}

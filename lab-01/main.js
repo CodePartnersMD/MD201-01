@@ -1,43 +1,85 @@
 console.log(alert("Let\'s go"));
 
+// CAPTCHA test
+
+let tchalla = prompt('To verify you are a human, please enter "tchalla" in the box.') ;
+console.log("tchalla first ask: " + tchalla)
+while (tchalla != "tchalla") {
+    tchalla = prompt('To verify you are a human, please enter "tchalla" in the box.')
+    console.log("tchalla while loop ask: " + tchalla)
+}
+
+/*if (tchalla = "tchalla") {
+    console.log(alert("Ok, terrific! Let\'s go!")) ; 
+} else {
+    while (tchalla != "tchalla") {
+    tchalla = prompt('To verify you are a human, please enter "tchalla" in the box.') ;
+    }
+}*/
+
 // create a function to store the scope of (i) creating an array, and (ii) the values assigned to the array, to facilitate accessing those values so the program can concatenate a string at the end of the function 
-// NOTE: this turned out to be unnecessary. the original errors that i was running into was because i used multiple let statements, and you CANNOT declare a variable multiple times.  The fix was to eliminate the the let statements, and just have aboutUser[x] = (reassigning the value)
+// NOTE: this (above) turned out to be unnecessary. the original errors that i was running into was because i used multiple let statements, and you CANNOT declare a variable multiple times.  The fix was to eliminate the the let statements, and just have aboutUser[x] = (reassigning the value)
 
 // Create an array to hold--what was previously--the separate variables name, origin, coder, and months
 
-let aboutUser = ["name", "origin", "coder", "months"] ;
+let aboutUser = ["name", "origin", "coder", "months", "why"] ;
 
 // Populate the array using four var statements that correspond to name, origin, coder, and months
 
 aboutUser[0] = prompt("What\'s your name") ;
-console.log(aboutUser[0])
+console.log("User name: " + aboutUser[0])
 
 aboutUser[1] = prompt("Hi " + aboutUser[0] + ". Where are you from?") ;
-console.log(aboutUser[1])
+console.log("User origin: " + aboutUser[1])
 
 let continny = confirm(aboutUser[0] + " to continue please press OK.") ;
 
 aboutUser[2] = prompt("What type of coder do you want to be?") ;
-console.log(aboutUser[2])
+console.log("User type of coder becoming: " + aboutUser[2])
 
 aboutUser[3] = prompt("In how many months do you want to be a " + aboutUser[2] + " by?") ;
-console.log(aboutUser[3])
+console.log("User desired months to become " + aboutUser[2] + ": " + aboutUser[3])
 
 // concatenate a string using the four values stored in the area and display it as a msg in a JavaScript box
 
 let msgtoyou = alert("Keep up the good work " + aboutUser[0] + " from " + aboutUser[1] + ", you will be a " + aboutUser[2] + " in " + aboutUser[3] + " months if you work hard.") ;
 
-// 
+// just when you thought it was over ... one more !!!
+// additional insight: for a nice stretch goal, learn to create a custom alert box, because as it stands now, you cannot make the "why" italicized (or bold) since it isn't rendered in HTML
+
+aboutUser[4] = prompt("Before we go, one more question " + aboutUser[0] + ", why do you want to become a " +aboutUser[2] + "?")
+console.log("First ask of Why: ", aboutUser[4])
+
+// this is an if-then-else statement, taking the answer to the final Why question. please notice the condition! Originally, this line wasn't working properly for a few reasons: (i) i wasn't using a strict check, which it needs ===, i was using = which is to assign; also, (ii) i had the "WOW..." alert as the if statement when it should have been the else statement.
+
+if (aboutUser[4] === "") {
+    alert("I don't see a why.  A clear why can be a powerful aid when things get tough.")
+} else {
+    alert("WOW, " + aboutUser[0] + " that's a tremendous why.  Keep that in mind and good luck!")
+}
+
+/* A simpler way may be to check the length. Remember, strings are array-like objects. So to check the length of the string, use the code below.
+
+if (aboutUser[4].length === 0) {
+    alert("I don't see a why.  A clear why can be a powerful aid when things get tough.")
+} else {
+    alert("WOW, " + aboutUser[0] + " that's a tremendous why.  Keep that in mind and good luck!")
+} */
+
+
+// This is how we are getting the information from JavaScript question boxes back onto the index.html page
 
 if (aboutUser[0] != null) {
     document.getElementById('userName').innerText = aboutUser[0]
 }
-
 if (aboutUser[1] != null) {
     document.getElementById('userOrigin').innerText = aboutUser[1]
 }
 if (aboutUser[2] != null) {
     document.getElementById('userCoder').innerText = aboutUser[2] 
+}
+if (aboutUser[4] != null) {
+    document.getElementById('userWhy').innerText = aboutUser[4] 
 }
 
 /* June 28, 2018 note - Below is the prior iteration of code with separate variables
