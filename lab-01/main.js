@@ -22,12 +22,16 @@ while (tchalla != "tchalla") {
 
 // Create an array to hold--what was previously--the separate variables name, origin, coder, and months
 
-let aboutUser = ["name", "origin", "coder", "months", "why"] ;
+let aboutUser = ["name", "origin", "coder", "months", "why", "nickname"] ;
 
 // Populate the array using four var statements that correspond to name, origin, coder, and months
 
-aboutUser[0] = prompt("What\'s your name") ;
+aboutUser[0] = prompt("What\'s your name?") ;
 console.log("User name: " + aboutUser[0])
+
+/* aboutUser[5] = prompt("Cool " + aboutUser[0] + ". What about a nickname?") ;
+console.log("User nickname: " + aboutUser[5]) 
+i was going to add a nickname prompt*/
 
 aboutUser[1] = prompt("Hi " + aboutUser[0] + ". Where are you from?") ;
 console.log("User origin: " + aboutUser[1])
@@ -81,6 +85,11 @@ if (aboutUser[2] != null) {
 if (aboutUser[4] != null) {
     document.getElementById('userWhy').innerText = aboutUser[4] 
 }
+/*if (aboutUser[5] != null) {
+    document.getElementById('userWhy').innerText = aboutUser[5] 
+} 
+this was to go with the nickname prompt */
+
 
 /* June 28, 2018 note - Below is the prior iteration of code with separate variables
 let name = prompt("What\'s your name");
