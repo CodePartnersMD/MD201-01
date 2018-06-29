@@ -38,12 +38,18 @@ h4 {
     color: deeppink ;
 }
 
+#contactMe {
+    background: rgb(192, 192, 250) ;
+    border: 12px solid blue ;
+}
+
 #topTen {
     background: rgb(175, 174, 174) ; 
     color: blueviolet ; 
     width: 65% ;
+    border: 6px ridge red ;
 }
 
 #listingItAll {
-    font-size: 20px
+    font-size: 20px ;
 }
