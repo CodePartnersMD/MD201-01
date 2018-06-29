@@ -1,5 +1,5 @@
 let name= prompt('What\s your name');
-name = 'i am ' + name;
+name =  name;
 console.log(name)
 
 let age= prompt ('How old are you?');
@@ -14,6 +14,7 @@ let greetings = confirm(name + " " + age + " " +continent);
 console.log(greetings);
 
 
+//replacing html with user input
 if(name){
     document.getElementById('Name-Of-User').innerText = name
 };
@@ -24,3 +25,27 @@ if(age){
 if(continent){
     document.getElementById('Birth-Place').innerText = continent
 };
+
+//testing putting values in an array to check if user is a human
+let areYouHuman;
+areYouHuman = [ 'like soccer', 'watch soccer','root for Brazil']
+
+//creating a for loop function to check if the use answer affirmatively or negatively to the values in the loop
+
+let emptyArray = [];
+let myResponse;
+
+for(var i = 0; i<areYouHuman.length;i++) {
+    myResponse = confirm(name + ", " + "do you "+ areYouHuman[i] + "?")   
+    emptyArray.push(myResponse)  
+    };
+console.log(emptyArray);
+//inserting an "if and else" statement to confirm that the user is human based on his/her answers
+
+if(emptyArray[0]==true && emptyArray[1] == true && emptyArray[2]== true ){
+    alert('Welcome my fellow human')
+} else {
+    alert('I\'m sorry, I can\'t verify your humaneness')
+};
+
+//Ask Zach to show the counter loop in Javascript
