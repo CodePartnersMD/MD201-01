@@ -1,5 +1,4 @@
 
-
 let name = prompt("What's your name?");
 let problem = prompt("Thanks, " +name+ ". How big a health problem is malaria?");
 let country = prompt("What country do you think has the highest malaria cases?");
@@ -46,5 +45,3 @@ console.log (name, problem, country, cases)
 // console.log(malariaCountries);
 // console.log(human)
 // console.log(captcha)
-
-
