@@ -1,29 +1,28 @@
-//# Technical Requirements
+// JS Code for Dan's Test Site
 
-//xxx - You may do the work in the same HTML file that we used for our class demo today. Because the originals from class are saved in the class GitHub repo, there is no worry in overwriting them or need for saving an unnecessary extra copy.
-//xxx - Using a total of four JavaScript 'prompt' or 'confirm' statements along the lines of our class demo from today, have a user answer four questions.
-//xxx - The user's response to each question (input) should be stored in a separate variable. Name your variables carefully.
-//XXX - Using these responses, return an alert to the user (output) that concatenates their response into some kind of reply like we did in class.
-//XXX- Strive to have your alert for each question utilize the responses to all of the prior questions such that by the fourth question, your response would look something like, "Greetings, *Iggy* from *Ipanema*, I also like to eat *bananas* while on vacation in *Paris*."
-// XXX- Be creative and have fun with your questions/responses! They can be whatever you want so long as the input/output requirements are met.
-// XXX- In addition, for each response, create a console.log() message that indicates the nature of the question and the user's response, as we did in class.
-// - In the HTML portion of the file, place the four questions within a series of <p> tags so that they are listed on the screen.
-// - If there are any lingering issues with the setup or functionality of your laptop and the software installations, we need to individually address that right away.
-
-let firstName = prompt("Hello, what\'s your first name?");
+let firstName = prompt("Hello welcome to my site, what\'s your first name?");
     console.log (" User's First Name = " + firstName)
+    document.getElementById('firstName').innerHTML = firstName;
 
 let lastName = prompt('What\'s your last name?')
     console.log (" User's Last Name = " + lastName)
+    document.getElementById('lastName').innerHTML = lastName;
+
+let age = prompt('How old are you? ')
+    console.log (" User Age = " + age)
+    document.getElementById('age').innerHTML = age;
 
 let origin = prompt('Where are you from?')
     console.log (" User's hometown or origin = " + origin)
+    document.getElementById('origin').innerHTML = origin;
 
-let favFood = prompt('What is your favorite food?')
-    console.log (" User's favorite food = " + favFood)
+let favColor = prompt ('What is your favorite color? ')
+    console.log (" User's favorite color = " + favColor)
+    document.getElementById('favColor').innerHTML = favColor;
 
-let confirm = alert('Hello ' + firstName + lastName + ' from ' + origin + ' I like ' + favFood + ' too ')
+let freeTime = prompt('What do you enjoy doing in your free time? ')
+    console.log (" User's free time activity = " + freeTime)
+    document.getElementById('freeTime').innerHTML = freeTime;
+
+let confirm = alert('Hello ' + firstName + lastName + ' from ' + origin + ' that is ' + age + ' years old ' +  'I like the color ' + favColor + ' too\. It\'s pretty cool that you like to ' + freeTime)
     console.log ('Concatenates Users input =' + confirm)
-
-
-
