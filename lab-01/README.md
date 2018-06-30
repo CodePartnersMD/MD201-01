@@ -1,3 +1,17 @@
+Driver: Ishamel Sunday
+Navigator: Patrice Thomas
+
+Code was worked on together.
+
+
+
+
+
+
+
+
+
+
 # Assignment Overview: Lab 1
 
 - Write a program that accepts user input and, based on that input, displays messages back to the user.
