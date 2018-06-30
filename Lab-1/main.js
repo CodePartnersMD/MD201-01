@@ -7,7 +7,7 @@ if (name != null){
 alert("Hi "+ name +"! Please click the \"OK button\" to enter your current city.")}; // using alert function. no input
 let origin = prompt(" Enter your current City:"); // prompt, input require
 let gender = prompt("Please enter your Gender:");// prompt, input require
-let coder = confirm('Finally, please  Click "OK" if you are a coder.'); // declare var confirm to collect user input
+let coder = confirm('Finally, are you a coder?'); // declare var confirm to collect user input
 console.log(name); // printing place function name in the paranthesis 
 console.log(origin); // printing place function name in the paranthesis 
 console.log(gender); // printing place function name in the paranthesis 
