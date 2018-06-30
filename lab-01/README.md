@@ -1,3 +1,8 @@
+# Updated README.md
+This is the pair programming challenge from June 30, 2018, in which I served as driver while Brittany was the navigator.  We are going to be adding functions to Brittany's code, and move the logic for the individual questions into separate functions, and call those functions to run the game.
+
+According to the assignment: <i>In its most basic sense, this is pretty simple and straightforward: 'wrap' the logic and variables for a given question with function someFuncNameYouChoose() { at the beginning, and add a closing curly brace } at the end. To make the function execute, just call it afterwards: someFuncNameYouChoose(); After completing this step the game should behave exactly as it did before. <em>a-c-p</em> </i>
+
 # Assignment Overview: Lab 1
 
 - Write a program that accepts user input and, based on that input, displays messages back to the user.
