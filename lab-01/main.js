@@ -22,6 +22,18 @@ let bandFunction = function() {
     return prompt("What's your favorite band?");
 }
 
+let movie1Function = function () {
+    return prompt("First favorite movie");
+}
+
+let movie2Function = function () {
+    return prompt("Second favorite movie");
+}
+
+let movie3Function = function () {
+    return prompt("Third favorite movie");
+}
+
 if (captcha == captchaResponse)
 {
     //Brittany's updated code for NAME that is wrapped in a function
@@ -59,12 +71,29 @@ if (captcha == captchaResponse)
 
     confirm("Hi, "+ name + "! It's nice to meet you. My favorite color is " + color + " too. But I'm allergic to " + animal + "s. Did you hear that " + band + " is in town next week?");
     alert("What are your top three favorite movies?")
-    let firstMovie = prompt("First favorite movie");
-    console.log(firstMovie);
-    let secondMovie = prompt("Second favorite movie");
-    console.log(secondMovie);
-    let thirdMovie = prompt("Third favorite movie");
-    console.log(thirdMovie);
+    
+
+    // Brittany's updated code for three favorite movies wrapped in three functions
+    let firstMovie = movie1Function()
+    console.log(firstMovie)
+
+    let secondMovie = movie2Function()
+    console.log(secondMovie)
+
+    let thirdMovie = movie3Function()
+    console.log (thirdMovie)
+
+    // Brittany's original code for her three favorite movie questions (does not include functions)
+    // let firstMovie = prompt("First favorite movie");
+    // console.log(firstMovie);
+    
+    // let secondMovie = prompt("Second favorite movie");
+    // console.log(secondMovie);
+    
+    // let thirdMovie = prompt("Third favorite movie");
+    // console.log(thirdMovie);
+    
+    
     confirm("Oh, I love " + firstMovie + "! But I haven't seen " + secondMovie + " or " + thirdMovie + " though.");
 
     if(name){
@@ -72,15 +101,15 @@ if (captcha == captchaResponse)
     }
     
     if(faveColor){
-        document.getElementById('faveColor').innerText = faveColor
+        document.getElementById('faveColor').innerText = color
     }
     
     if(faveAnimal){
-        document.getElementById('faveAnimal').innerText = faveAnimal
+        document.getElementById('faveAnimal').innerText = animal
     }
     
     if(faveBand){
-        document.getElementById('faveBand').innerText = faveBand
+        document.getElementById('faveBand').innerText = band
     }
     
     if(firstMovie){
