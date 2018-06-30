@@ -1,6 +1,7 @@
 console.log(alert("Let\'s go"));
 
 // CAPTCHA test
+// hi
 
 let tchalla = prompt('To verify you are a human, please enter "tchalla" in the box.') ;
 console.log("tchalla first ask: " + tchalla)
