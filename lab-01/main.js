@@ -22,45 +22,95 @@ while (tchalla != "tchalla") {
 
 // Create an array to hold--what was previously--the separate variables name, origin, coder, and months
 
+// let questions = ["What\'s your name?", ]
 let aboutUser = ["name", "origin", "coder", "months", "why", "nickname"] ;
 
 // Populate the array using four var statements that correspond to name, origin, coder, and months
 
-aboutUser[0] = prompt("What\'s your name?") ;
-console.log("User name: " + aboutUser[0])
+let userNameFunction = function() {
+    aboutUser[0] = prompt("What\'s your name?") ;
+    console.log("User name: " + aboutUser[0])
+}
+
+let userOriginFunction = function() {
+    aboutUser[1] = prompt("Hi " + aboutUser[0] + ". Where are you from?") ;
+    console.log("User origin: " + aboutUser[1])
+}
+
+let continnyFunction = function() {
+    let continny = confirm(aboutUser[0] + " to continue please press OK.") ;
+}
+
+let coderTypeFunction = function() {
+    aboutUser[2] = prompt("What type of coder do you want to be?") ;
+    console.log("User type of coder becoming: " + aboutUser[2])
+}
+
+let timeToCoderFunction = function() {
+    aboutUser[3] = prompt("In how many months do you want to be a " + aboutUser[2] + " by?") ;
+    console.log("User desired months to become " + aboutUser[2] + ": " + aboutUser[3])
+}
+
+let msgToUserFunction = function () {
+    let msgtoyou = alert("Keep up the good work " + aboutUser[0] + " from " + aboutUser[1] + ", you will be a " + aboutUser[2] + " in " + aboutUser[3] + " months if you work hard.") ;
+}
+
+let usersWhy = function() {
+    aboutUser[4] = prompt("Before we go, one more question " + aboutUser[0] + ", why do you want to become a " + aboutUser[2] + "?")
+    console.log("First ask of Why: ", aboutUser[4])
+
+    if (aboutUser[4] === "") {
+        alert("I don't see a why.  A clear why can be a powerful aid when things get tough.")
+    } else {
+        alert("WOW, " + aboutUser[0] + " that's a tremendous why.  Keep that in mind and good luck!")
+    }
+}
+
+
+userNameFunction();
+userOriginFunction(); 
+continnyFunction();
+coderTypeFunction();
+timeToCoderFunction();
+msgToUserFunction();
+usersWhy();
+
+
+// aboutUser[0] = prompt("What\'s your name?") ;
+// console.log("User name: " + aboutUser[0])
 
 /* aboutUser[5] = prompt("Cool " + aboutUser[0] + ". What about a nickname?") ;
 console.log("User nickname: " + aboutUser[5]) 
 i was going to add a nickname prompt*/
 
-aboutUser[1] = prompt("Hi " + aboutUser[0] + ". Where are you from?") ;
-console.log("User origin: " + aboutUser[1])
+// aboutUser[1] = prompt("Hi " + aboutUser[0] + ". Where are you from?") ;
+// console.log("User origin: " + aboutUser[1])
 
-let continny = confirm(aboutUser[0] + " to continue please press OK.") ;
+// let continny = confirm(aboutUser[0] + " to continue please press OK.") ;
 
-aboutUser[2] = prompt("What type of coder do you want to be?") ;
-console.log("User type of coder becoming: " + aboutUser[2])
+// aboutUser[2] = prompt("What type of coder do you want to be?") ;
+// console.log("User type of coder becoming: " + aboutUser[2])
 
-aboutUser[3] = prompt("In how many months do you want to be a " + aboutUser[2] + " by?") ;
-console.log("User desired months to become " + aboutUser[2] + ": " + aboutUser[3])
+// aboutUser[3] = prompt("In how many months do you want to be a " + aboutUser[2] + " by?") ;
+// console.log("User desired months to become " + aboutUser[2] + ": " + aboutUser[3])
 
 // concatenate a string using the four values stored in the area and display it as a msg in a JavaScript box
 
-let msgtoyou = alert("Keep up the good work " + aboutUser[0] + " from " + aboutUser[1] + ", you will be a " + aboutUser[2] + " in " + aboutUser[3] + " months if you work hard.") ;
+// let msgtoyou = alert("Keep up the good work " + aboutUser[0] + " from " + aboutUser[1] + ", you will be a " + aboutUser[2] + " in " + aboutUser[3] + " months if you work hard.") ;
 
 // just when you thought it was over ... one more !!!
 // additional insight: for a nice stretch goal, learn to create a custom alert box, because as it stands now, you cannot make the "why" italicized (or bold) since it isn't rendered in HTML
 
-aboutUser[4] = prompt("Before we go, one more question " + aboutUser[0] + ", why do you want to become a " +aboutUser[2] + "?")
-console.log("First ask of Why: ", aboutUser[4])
+// aboutUser[4] = prompt("Before we go, one more question " + aboutUser[0] + ", why do you want to become a " +aboutUser[2] + "?")
+// console.log("First ask of Why: ", aboutUser[4])
 
 // this is an if-then-else statement, taking the answer to the final Why question. please notice the condition! Originally, this line wasn't working properly for a few reasons: (i) i wasn't using a strict check, which it needs ===, i was using = which is to assign; also, (ii) i had the "WOW..." alert as the if statement when it should have been the else statement.
 
-if (aboutUser[4] === "") {
-    alert("I don't see a why.  A clear why can be a powerful aid when things get tough.")
-} else {
-    alert("WOW, " + aboutUser[0] + " that's a tremendous why.  Keep that in mind and good luck!")
-}
+// if (aboutUser[4] === "") {
+//    alert("I don't see a why.  A clear why can be a powerful aid when things get tough.")
+//} else {
+//    alert("WOW, " + aboutUser[0] + " that's a tremendous why.  Keep that in mind and good luck!")
+// }
 
 /* A simpler way may be to check the length. Remember, strings are array-like objects. So to check the length of the string, use the code below.
 
