@@ -34,7 +34,7 @@ areYouHuman = [ 'like soccer', 'watch soccer','root for Brazil']
 
 //creating a for loop function to check if the use answer affirmatively or negatively to the values in the loop
 
-let emptyArray = [];
+let emptyArray = []
 let myResponse;
 
 for(var i = 0; i<areYouHuman.length;i++) {
