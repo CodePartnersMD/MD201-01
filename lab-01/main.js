@@ -1,7 +1,6 @@
 console.log(alert("Let\'s go"));
 
 // CAPTCHA test
-// hi
 
 let tchalla = prompt('To verify you are a human, please enter "tchalla" in the box.') ;
 console.log("tchalla first ask: " + tchalla)
@@ -23,12 +22,20 @@ while (tchalla != "tchalla") {
 
 // Create an array to hold--what was previously--the separate variables name, origin, coder, and months
 
+// let questions = ["What\'s your name?", ]
 let aboutUser = ["name", "origin", "coder", "months", "why", "nickname"] ;
 
 // Populate the array using four var statements that correspond to name, origin, coder, and months
 
-aboutUser[0] = prompt("What\'s your name?") ;
-console.log("User name: " + aboutUser[0])
+let userName = function() {
+    aboutUser[0] = prompt("What\'s your name?") ;
+    console.log("User name: " + aboutUser[0])
+}
+
+userName();
+
+// aboutUser[0] = prompt("What\'s your name?") ;
+// console.log("User name: " + aboutUser[0])
 
 /* aboutUser[5] = prompt("Cool " + aboutUser[0] + ". What about a nickname?") ;
 console.log("User nickname: " + aboutUser[5]) 
