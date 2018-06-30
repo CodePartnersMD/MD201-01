@@ -1,12 +1,20 @@
 //creating prompts for user to input value and storing those values using console.log
-
+//wrapping logic into for a given questiion into a function.
+let nameIntoFunction = function() { 
 let name= prompt('What\s your name');
 name =  name;
 console.log(name)
+return name
+}
+let newNameFunction = nameIntoFunction()
 
+//wrapping logic into for a given questiion into a function.
+let ageIntoFunction = function() {
 let age= prompt ('How old are you?');
 age = age +' years old';
 console.log(age);
+}
+let newAgeFunction = ageIntoFunction()
 
 let continent= prompt('what continent are you from?');
 continent = 'from '+ continent;
