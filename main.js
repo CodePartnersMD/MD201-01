@@ -1,7 +1,7 @@
 let name = prompt("What\'s your name?");
 console.log(name);
 let human = ['AhO42', 'Gkr6p', 'TtQy5', 'SjvL2'];
-let random = Math.floor(Math.random() * 3);
+let random = Math.floor(Math.random() * 4);
 let test = human[random];
 let humanCheck = prompt('Type in the following word to prove you are human ' + name + " : " + test)
 let greeting = confirm("Hi " + name + " nice to meet you" );
@@ -13,13 +13,13 @@ console.log(resident);
 console.log(date);
 console.log(myLocation);
 console.log(alert("Let\'s go " + name));
-let myArray= [' White', 'Hispanic or Latino', 'African-American' ,'East Asia']
+let myArray= [' White ', 'Hispanic or Latino ', 'African-American ' ,'East Asia ']
 let captcha = prompt('Please write your race ' + myArray)
 
-var country = ["Iran" , "Canada" , "Egipt"]
+var country = ["Iran" , "Canada" , "Egipt", "Afghanistan", "United States"]
 for (var i=0; i< country.length ; i++){
-    confirm ("Is your country? " + country[i]);
+    confirm ("Are you from " + country[i]+" ?");
 }
-if(name != null){
-    document.getElementById('name').innerText = name
+if(name){
+    document.getElementById('ProfileName').innerText = name
 }
