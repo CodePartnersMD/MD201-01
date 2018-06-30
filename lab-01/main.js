@@ -24,31 +24,31 @@ if (captcha == captchaResponse)
     console.log(thirdMovie);
     confirm("Oh, I love " + firstMovie + "! But I haven't seen " + secondMovie + " or " + thirdMovie + " though.");
 
-    if(name!=null){
+    if(name){
         document.getElementById('name').innerText = name
     }
     
-    if(faveColor!=null){
+    if(faveColor){
         document.getElementById('faveColor').innerText = faveColor
     }
     
-    if(faveAnimal!=null){
+    if(faveAnimal){
         document.getElementById('faveAnimal').innerText = faveAnimal
     }
     
-    if(faveBand!=null){
+    if(faveBand){
         document.getElementById('faveBand').innerText = faveBand
     }
     
-    if(firstMovie!=null){
+    if(firstMovie){
         document.getElementById('firstMovie').innerText = firstMovie
     }
     
-    if(secondMovie!=null){
+    if(secondMovie){
         document.getElementById('secondMovie').innerText = secondMovie
     }
     
-    if(thirdMovie!=null){
+    if(thirdMovie){
         document.getElementById('thirdMovie').innerText = thirdMovie
     }
 }
