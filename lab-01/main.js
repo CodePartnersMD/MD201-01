@@ -45,66 +45,66 @@ let movie3Function = function () {
     return prompt("Third favorite movie");
 }
 
-    //Brittany's updated code for NAME that is wrapped in a function
-    let name = nameFunction()
-    console.log(name)
-    
-    //Brittany's original code (does not include functions)
-    //let name = prompt("What's your name?");
-    //console.log(name);
-    
-    //Brittany's updated code for COLOR that is wrapped in a function
-    let color = colorFunction()
-    console.log(color)
-    
-    //Brittany's original code (does not include functions)
-    //let faveColor = prompt("What's your favorite color?");
-    //console.log(prompt);
-    
-    //Brittany's updated code for ANIMAL that is wrapped in a function
-    let animal = animalFunction()
-    console.log(animal)
+//Brittany's updated code for NAME that is wrapped in a function
+let name = nameFunction()
+console.log(name)
 
-    //Brittany's original code (does not include functions)
-    //let faveAnimal = prompt("What's your favorite animal?"); 
-    //console.log(faveAnimal);
+//Brittany's original code (does not include functions)
+//let name = prompt("What's your name?");
+//console.log(name);
 
-    //Brittany's updated code for BAND that is wrapped in a function
-    let band = bandFunction()
-    console.log(band)
+//Brittany's updated code for COLOR that is wrapped in a function
+let color = colorFunction()
+console.log(color)
 
-    //Brittany's original code (does not include functions)
-    //let faveBand = prompt("What's your favorite band?");
-    //console.log(faveBand);
+//Brittany's original code (does not include functions)
+//let faveColor = prompt("What's your favorite color?");
+//console.log(prompt);
+
+//Brittany's updated code for ANIMAL that is wrapped in a function
+let animal = animalFunction()
+console.log(animal)
+
+//Brittany's original code (does not include functions)
+//let faveAnimal = prompt("What's your favorite animal?"); 
+//console.log(faveAnimal);
+
+//Brittany's updated code for BAND that is wrapped in a function
+let band = bandFunction()
+console.log(band)
+
+//Brittany's original code (does not include functions)
+//let faveBand = prompt("What's your favorite band?");
+//console.log(faveBand);
 
 
-    confirm("Hi, "+ name + "! It's nice to meet you. My favorite color is " + color + " too. But I'm allergic to " + animal + "s. Did you hear that " + band + " is in town next week?");
-    
-    alert("What are your top three favorite movies?")
-    
+confirm("Hi, "+ name + "! It's nice to meet you. My favorite color is " + color + " too. But I'm allergic to " + animal + "s. Did you hear that " + band + " is in town next week?");
 
-    // Brittany's updated code for three favorite movies wrapped in three functions
-    let firstMovie = movie1Function()
-    console.log(firstMovie)
+alert("What are your top three favorite movies?")
 
-    let secondMovie = movie2Function()
-    console.log(secondMovie)
 
-    let thirdMovie = movie3Function()
-    console.log (thirdMovie)
+// Brittany's updated code for three favorite movies wrapped in three functions
+let firstMovie = movie1Function()
+console.log(firstMovie)
 
-    // Brittany's original code for her three favorite movie questions (does not include functions)
-    // let firstMovie = prompt("First favorite movie");
-    // console.log(firstMovie);
-    
-    // let secondMovie = prompt("Second favorite movie");
-    // console.log(secondMovie);
-    
-    // let thirdMovie = prompt("Third favorite movie");
-    // console.log(thirdMovie);
-    
-    
-    confirm("Oh, I love " + firstMovie + "! But I haven't seen " + secondMovie + " or " + thirdMovie + " though.");
+let secondMovie = movie2Function()
+console.log(secondMovie)
+
+let thirdMovie = movie3Function()
+console.log (thirdMovie)
+
+// Brittany's original code for her three favorite movie questions (does not include functions)
+// let firstMovie = prompt("First favorite movie");
+// console.log(firstMovie);
+
+// let secondMovie = prompt("Second favorite movie");
+// console.log(secondMovie);
+
+// let thirdMovie = prompt("Third favorite movie");
+// console.log(thirdMovie);
+
+
+confirm("Oh, I love " + firstMovie + "! But I haven't seen " + secondMovie + " or " + thirdMovie + " though.");
 
 if(name){
     document.getElementById('name').innerText = name
