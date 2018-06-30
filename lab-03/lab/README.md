@@ -4,6 +4,14 @@ Today will be your first exercise in pair programming. You will be assigned to w
 
 Since you have 4 hours in which to edit two projects, you'll need to work efficiently and limit your work to two hours on a single person's project. Time management is critical.
 
+### Getting Started
+
+* First the Navigator must add the navigator as a collaborator, to do this, go into the repo you will be working on, click on settings tab, click on collaborators, then add your partners github user name as a collaborator
+
+* Once you have added each other as a collaborator, the driver must clone the navigotors repo on to their local machine
+
+* Now that this is complete, create a new branch in the cloned repo, make a change and ensure that you can ACP to your partners repo, then get hacking!
+
 ### Pair Programming Basics
 
 * In pair programming there are two developers working on a single body of code on a single computer.
