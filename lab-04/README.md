@@ -1,15 +1,5 @@
 # Assignment Overview: Lab 4
 
-There are two parts to your lab assignment, and each is in a different assignment in Canvas:
-
-### First Part: Finish About Me
-
-Put finishing touches on your About Me project and get it deployed. The more time you spend with this, the better you'll get at CSS, but keep in mind that you also have readings to do and need to get some rest and relaxation in as well! The next project we will start is challenging, so be sure to come into it refreshed and ready.
-
----
-
-### Second Part: Writing Code On Branches
-
 Today in lab you will fork and clone a GitHub repo, and then create solutions to some code problems such that your solutions pass the included tests.
 
 **Be sure to follow instructions carefully.**
