@@ -1,8 +1,5 @@
 # Code 201: Foundations of Software Development
 
-## Week 2: Building a Basic Web App for a Retail Chain
-
-
 ### Week 3 & 4 Learning Objectives
 As a result of completing Week 2 of Code 201, and building the retail chain weekly project, students will:
 * Demonstrate the ability to construct a web application of multiple pages that serves a collection of user stories and technical goals outlined in the assignment documents.
