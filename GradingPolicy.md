@@ -8,13 +8,13 @@
 
 ## Below is our Grading Breadkdown of how Assignments are weighted
 
-10% Attendance
-5% Prework
-10% Reading/Discussions
-10% Quizzes
-30% Coding Labs
-30% Final Projects
-5% Weekly/Bi-weekly feedback surveys
+- 10% Attendance
+- 5% Prework
+- 10% Reading/Discussions
+- 10% Quizzes
+- 30% Coding Labs
+- 30% Final Projects
+- 5% Weekly/Bi-weekly feedback surveys
 
 ### Coding Lab Rubric
 
