@@ -16,6 +16,14 @@ storeArray.push(storeTwo)
 
 
 Store.prototype.price = 10
+Store.prototype.revenue = 0
 
-console.log(storeArray)
+Store.prototype.calRevenue = function() {
+    this.revenue = this.customers * this.price
+}
+
+console.log(storeOne)
+console.log(storeTwo)
+
+
 

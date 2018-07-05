@@ -1,10 +1,8 @@
 # Grading Policy Code Partners MD201
 
-- To pass the Code Partners 201 course you must meet 2 of the 3 following criteria
-
-1. Receive a 90% grade or higher
-2. Pass the 301 Entrance Exam (required to advance to 301)
-3. Receive instructor approval
+- To Progress to the 301 course you must :
+    1. Pass the 301 entrance exam
+    2. Pass the course with 90% or receive instructor approval
 
 ## Below is our Grading Breadkdown of how Assignments are weighted
 
