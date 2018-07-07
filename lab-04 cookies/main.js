@@ -10,6 +10,16 @@ let storeTwo = new Store('Chocolate Store', 'Bethesda', 'Chocolate Cookies', 180
 
 console.log(storeOne);
 console.log(storeTwo);
+
+Store.prototype.price = 7.30;
+Store.prototype.revenue = 0;
+
+Store.prototype.calRevenue = function(){
+    this.revenue = this.costumers*this.price;
+}
+
+console.log(storeOne);
+console.log(storeTwo);
 // let storeOne = {
 //     name: 'Chocolate Store',
 //     product: 'Chocolate Cookies',
