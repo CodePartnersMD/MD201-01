@@ -27,8 +27,7 @@ Store.prototype.calRevenue = function() {
     this.revenue = this.customers * this.price
 }
 
-console.log(storeOne)
-console.log(storeTwo)
+
 
 
 
