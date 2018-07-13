@@ -1,5 +1,5 @@
 * {
-    background-color: darkgrey;
+    background-color: gray;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -8,9 +8,36 @@
     border-radius: 15px;
     color: black;
     padding: 15px 32px;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     font-size: 13px;
     margin: 0 auto;
     cursor: pointer;
+    font-weight: bold;
 }
+
+#formDiv {
+    border: 2px solid black;
+    margin: 10px;
+    padding: 20px;
+    width: 260px;
+    border-radius: 5px;
+}
+
+.label {
+    width: 200px;
+    padding-right: 10px;
+}
+
+.bars {
+    border: 2px solid red;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+#submit{
+    width: 300px;
+    text-align: right;
+}
+
