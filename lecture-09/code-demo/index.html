@@ -9,6 +9,7 @@
 </head>
 <body id='main-content'>
     <div id='table-container'></div>
+    <fieldset>
     <form id='hogwarts-form'>
         <input name='wizardName' type='text' />
         <input name='wizardAge' type='number' />
@@ -18,9 +19,11 @@
             <option value='ravenclaw'>Ravenclaw</option>
             <option value='hufflepuff'>Hufflepuff</option>
         </select>
-        <input name='wizardPet' type='radio' >Has Pet</input>
+        <input id='pet' name='wizardPet' type='radio' />
+        <label for='pet'>Has Pet</label>
         <button type='submit'>Submit</button>
     </form>
+    </fieldset>
     
     
 </body>

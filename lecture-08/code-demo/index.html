@@ -10,16 +10,23 @@
 <body id='main-content'>
     <div id='table-container'></div>
     <form id='hogwarts-form'>
-        <input required name='wizardName' type='email' />
-        <input name='wizardAge' type='number' />
-        <select name='wizardHouse'>
+        <div>
+            <input required name='wizardName' type='email' />
+        </div>
+        <div>
+            <input name='wizardAge' type='number' />
+        </div>
+        <div><select name='wizardHouse'>
             <option value='gryffindor'>Gryffindor</option>
             <option value='slytherin'>Slytherin</option>
             <option value='ravenclaw'>Ravenclaw</option>
             <option value='hufflepuff'>Hufflepuff</option>
         </select>
-        <input name='wizardPet' type='radio' >Has Pet</input>
-        <button type='submit'>Submit</button>
+        <div>
+            <input name='wizardPet' type='radio' >Has Pet</input>
+        <div>
+            <button type='submit'>Submit</button>
+        </div>
     </form>
     
     
