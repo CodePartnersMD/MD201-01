@@ -1,7 +1,7 @@
-# Class 13: Local Storage and UI/UX Concepts
+# Class 12: Local Storage and UI/UX Concepts
 
 <a id="top"></a>
-## Lecture 13
+## Lecture 12
 
 ## Today's Schedule
 - Announcements

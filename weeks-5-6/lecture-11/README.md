@@ -1,7 +1,7 @@
-# Class 12: Adding Charts to the Vote Tracker App
+# Class 11: Adding Charts to the Vote Tracker App
 
 <a id="top"></a>
-## Lecture 12
+## Lecture 11
 
 ## Today's Schedule
 - Announcements

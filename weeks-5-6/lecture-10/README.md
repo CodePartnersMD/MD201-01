@@ -1,4 +1,4 @@
-# Class 11: A/V, Practical Info, and Getting the Vote Tracker Started
+# Class 10: A/V, Practical Info, and Getting the Vote Tracker Started
 
 <a id="top"></a>
 ## Lecture 10
