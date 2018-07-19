@@ -19,7 +19,7 @@ Lecture Notes will be placed in each class' lecture-code subdirectory as a markd
 
 ## Assignments
 
-Lab-time code assignments follow each class time. You can find these assignments in the subdirectories of each class folder. Assignment content will very from day to day, depending on the topic. Some of the lab assignments will be pair programming assignments.
+Lab-time code assignments follow each class time. You can find these assignments in the subdirectories of each class folder. Assignment content will vary from day to day, depending on the topic. Some of the lab assignments will be pair programming assignments.
 
 Instructions for completing and submitting the assignments can be found in the README files of the appropriate subdirectories.
 
