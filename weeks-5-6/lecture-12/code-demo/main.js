@@ -38,35 +38,38 @@ let randomImage = function() {
     elImage.src = imageIndex.filePath
 }
 
+//function that will dynamically populate chart with labels and data from imageArray
 function populateChart(props) {
+    //declare labels variable and assign value of empty array
     let labels = []
+    //create for loop that will iterate through imageArray and push property that was passed as argument into lables array
     for(let i=0; i < imageArray.length; i++) {
         labels.push(imageArray[i][props])
     }
+    //return labels array
     return labels
 }
 
 //creating event handler to track number of times image is clicked
 let imageClick = function(e) {
 
+    //retreiving our image objects array from locatl storage by passing the local storage key as an argument and parsing the value back into an array of objects which we can then mutate
+    if(localStorage.imgArr) {
+        imageArray = JSON.parse(localStorage.getItem("imageArr"))
+    }
     //accessing clicked property on random image object and incrementing by 1 each time clicked
     imageIndex.clicked += 1
     console.log('index', imageIndex.clicked)
     //invoking random image function to populate a new image
     randomImage()
-    //setting an item in local storage passing the name of the local storage key as the first argument and the stringified version of our image objects array as the second argument
-    localStorage.setItem("imageArr", JSON.stringify(imageArray))
 
-    console.log('Stringified', localStorage.imageArr)
-    //retreiving our image objects array from locatl storage by passing the local storage key as an argument and parsing the value back into an array of objects which we can then mutate
-    imageArray = JSON.parse(localStorage.getItem("imageArr"))
     // instatiating new chart and using image object properties to populate labels and datasets
     new Chart(ctx, {
         //setting the type of chart to bar
         type: 'bar',
         //giving data property to chart
         data: {
-            //setting the lables as image names
+            //invoke populate charts funtion that will return array of name properties from image objects
             labels: populateChart('name'),
             //passing in array of datasets to populate individual bars, each dataset will create a new bar for our chart
             datasets: [
@@ -75,7 +78,7 @@ let imageClick = function(e) {
                 label: 'Clicked',
                 backgroundColor: 'rgb(255, 99, 130)',
                 borderColor: 'rgb(255, 99, 130)',
-                //passing in clicked property as data to calculate bars for each label
+                //invoke populate chart function that will return array of clicked property values from image objects
                 data: populateChart('clicked')
             }
             // {
@@ -87,16 +90,20 @@ let imageClick = function(e) {
         ]
         }
     })
+        //setting an item in local storage passing the name of the local storage key as the first argument and the stringified version of our image objects array as the second argument
+        localStorage.setItem("imageArr", JSON.stringify(imageArray))
+
+        console.log('Stringified', localStorage.imageArr)
 }
 
 //attaching event listener to image tag
 elImage.addEventListener('click', imageClick)
 
-//calling random image function that will display random image
-if(localStorage.imageArr) {
+//if imgArr in local storage exists, parse data and assign value to imageArray
+if(localStorage.imgArr) {
     imageArray = JSON.parse(localStorage.getItem("imageArr"))
 }
-console.log(imageArray)
+//calling random image function that will display random image
 randomImage()
 
 
