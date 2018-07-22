@@ -17,26 +17,38 @@ let Image = function(name, filePath, clicked) {
     this.clicked = clicked;
 }
 
-//instanitating new image object
-let Thanos = new Image('Thanos', './assets/thanos.jpg', 0)
-let Thor = new Image('Thor', './assets/thor.jpg', 0)
-let Deadpool = new Image('Deadpool', './assets/deadpool.jpeg', 0)
+//if imgArr in local storage exists, parse data and assign value to imageArray, else instantiate new objects and push to imageArray
+if(localStorage.imgageArr) {
+    imageArray = JSON.parse(localStorage.getItem("imageArr"))
+} else {
+    //instanitating new image object
+    let Thanos = new Image('Thanos', './assets/thanos.jpg', 0)
+    let Thor = new Image('Thor', './assets/thor.jpg', 0)
+    let Deadpool = new Image('Deadpool', './assets/deadpool.jpeg', 0)
 
-//pushing new image objects to image array
-imageArray.push(Thanos, Thor, Deadpool)
+    //pushing new image objects to image array
+    imageArray.push(Thanos, Thor, Deadpool)
+}
 
 //creating function that will select a random image from array of image objects
 let randomImage = function() {
+    //retreiving our image objects array from locatl storage by passing the local storage key as an argument and parsing the value back into an array of objects which we can then mutate
+    if(localStorage.imageArr) {
+        imageArray = JSON.parse(localStorage.getItem("imageArr"))
+        console.log('parsed', imageArray)
+    }
     //assigning random number that will be determined by lenght of image array and use it as index
     let randomIndex = Math.floor(Math.random() * imageArray.length)
 
     //using random number to retrieve random image from array
     imageIndex = imageArray[randomIndex]
-    console.log(imageIndex.name)
 
     // assigning the src of our image tag to the random image
     elImage.src = imageIndex.filePath
 }
+
+//calling random image function that will display random image
+randomImage()
 
 //function that will dynamically populate chart with labels and data from imageArray
 function populateChart(props) {
@@ -53,13 +65,12 @@ function populateChart(props) {
 //creating event handler to track number of times image is clicked
 let imageClick = function(e) {
 
-    //retreiving our image objects array from locatl storage by passing the local storage key as an argument and parsing the value back into an array of objects which we can then mutate
-    if(localStorage.imgArr) {
-        imageArray = JSON.parse(localStorage.getItem("imageArr"))
-    }
     //accessing clicked property on random image object and incrementing by 1 each time clicked
     imageIndex.clicked += 1
-    console.log('index', imageIndex.clicked)
+    console.log('index', imageIndex)
+    localStorage.setItem("imageArr", JSON.stringify(imageArray))
+
+    console.log('Stringified', localStorage)
     //invoking random image function to populate a new image
     randomImage()
 
@@ -91,20 +102,13 @@ let imageClick = function(e) {
         }
     })
         //setting an item in local storage passing the name of the local storage key as the first argument and the stringified version of our image objects array as the second argument
-        localStorage.setItem("imageArr", JSON.stringify(imageArray))
 
-        console.log('Stringified', localStorage.imageArr)
 }
 
 //attaching event listener to image tag
 elImage.addEventListener('click', imageClick)
 
-//if imgArr in local storage exists, parse data and assign value to imageArray
-if(localStorage.imgArr) {
-    imageArray = JSON.parse(localStorage.getItem("imageArr"))
-}
-//calling random image function that will display random image
-randomImage()
+
 
 
 
