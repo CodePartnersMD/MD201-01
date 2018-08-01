@@ -32,6 +32,8 @@ if(localStorage.imgageArr) {
 
 //creating function that will select a random image from array of image objects
 let randomImage = function() {
+
+
     //retreiving our image objects array from locatl storage by passing the local storage key as an argument and parsing the value back into an array of objects which we can then mutate
     if(localStorage.imageArr) {
         imageArray = JSON.parse(localStorage.getItem("imageArr"))
@@ -109,6 +111,14 @@ let imageClick = function(e) {
 elImage.addEventListener('click', imageClick)
 
 
+//example code
+    // localStorage.setItem('imageArray', JSON.stringify(imageArray));
+    // imageArray = JSON.parse(localStorage.getItem('imageArray'));
+    // console.log('parsed', imageArray[0].clicked);
+    // imageArray[0].clicked += 1;
+    // localStorage.setItem('imageArray', JSON.stringify(imageArray));
+    // imageArray = JSON.parse(localStorage.getItem('imageArray'));
+    // console.log(imageArray[0].clicked);
 
 
 

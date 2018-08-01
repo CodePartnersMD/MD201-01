@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-</head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"></head>
 <body id='main-content'>
     <div id='table-container'></div>
     <fieldset>
-    <form id='hogwarts-form'>
-        <input name='wizardName' type='text' />
-        <input name='wizardAge' type='number' />
-        <select name='wizardHouse'>
+    <form class='form-group'id='hogwarts-form'>
+        <div class='container'>
+            <div class='row'>
+        <input class='col-sm'name='wizardName' type='text' />
+        <input class='col-sm' name='wizardAge' type='number' />
+        <select class='col-sm' name='wizardHouse'>
             <option value='gryffindor'>Gryffindor</option>
             <option value='slytherin'>Slytherin</option>
             <option value='ravenclaw'>Ravenclaw</option>
             <option value='hufflepuff'>Hufflepuff</option>
         </select>
-        <input id='pet' name='wizardPet' type='radio' />
-        <label for='pet'>Has Pet</label>
-        <button type='submit'>Submit</button>
+        <input class='col-sm' id='pet' name='wizardPet' type='radio' />
+        <label class='col-sm' for='pet'>Has Pet</label>
+        <button class='btn btn-primary'type='submit'>Submit</button>
+        </div>
+        </div>
     </form>
     </fieldset>
     
