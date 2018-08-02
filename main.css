@@ -1,0 +1,37 @@
+h1 {border-block-start-color: 100px;
+    text-align: center;
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color: pink;
+    width: 650px;
+    height: 100px;
+    padding-block-start: 100px;
+    float: calc(150%/2);
+    text-emphasis-color: black;
+    margin-block-start: 10px;
+    column-span: "2";
+    margin:0px;
+    }
+
+
+
+#part {border-block-start-width: 5px;
+       padding:20px;
+       background-color: blueviolet;
+       float: left;
+       float: calc(150%/2);
+       line-height: 170%;
+       margin-top: 5px;
+
+
+       }
+.green {border-block-end-width: 5px;
+        padding: 20px;
+        background-color: pink;
+        float: left;
+        float: calc(150%/2);
+        line-height: 170%;
+        margin-top: 5px;
+       }
+        
+
