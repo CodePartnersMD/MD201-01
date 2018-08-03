@@ -66,7 +66,7 @@ function populateChart(props) {
 
 //creating event handler to track number of times image is clicked
 let imageClick = function(e) {
-
+    console.log(e.target.myParams)
     //accessing clicked property on random image object and incrementing by 1 each time clicked
     imageIndex.clicked += 1
     console.log('index', imageIndex)
@@ -107,6 +107,8 @@ let imageClick = function(e) {
 
 }
 
+elImage.myParams = 'new params'
+console.log(elImage.myParams)
 //attaching event listener to image tag
 elImage.addEventListener('click', imageClick)
 
