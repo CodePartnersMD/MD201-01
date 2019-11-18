@@ -1,0 +1,57 @@
+/* brittany is better at this */
+
+body {
+    background-color: rgb(71, 68, 68) ; 
+    font-family: Arial, sans-serif; color: white; font-size: 16px ; 
+    padding: 8px ;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace; color: rgb(58, 9, 236); font-size: 36px ;
+    font-weight: bold ;
+    padding: 24px ; 
+}
+
+h2 {
+    font-family: Arial, sans-serif; color: rgb(15, 238, 15); font-size: 28px ;
+    font-weight: bolder ; 
+    padding: 20px ;
+}
+
+h3 {
+    font-family: Arial, sans-serif; color: white; font-size: 24px ;
+    font-weight: bold ;
+    padding: 16px ;
+}
+
+h4 {
+    font-family: Arial, sans-serif; color: rgb(236, 92, 9); font-size: 24px ;
+    font-weight: bold ;
+    padding: 16px ;
+}
+
+
+.userColorDisplay {
+    font-family: Arial, sans-serif; color: rgb(232, 236, 9); font-size: 24px ;
+    font-weight: bold
+}
+
+.elementYOU {
+    color: deeppink ;
+}
+
+#contactMe {
+    background: rgb(192, 192, 250) ;
+    border: 12px solid blue ;
+}
+
+#topTen {
+    background: rgb(175, 174, 174) ; 
+    color: blueviolet ; 
+    width: 65% ;
+    border: 6px ridge red ;
+}
+
+#listingItAll {
+    font-size: 20px ;
+}
